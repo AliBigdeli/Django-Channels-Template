@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">Django Channel 4 Template</h1>
-<h3 align="center">Sample project for a chatroom application for demo</h3>
+<h3 align="center">Sample project for a chatroom application as demo</h3>
 </div>
 <p align="center">
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
@@ -12,6 +12,7 @@
 
 # Guideline
 - [Guideline](#guideline)
+- [Demo](#demo)
 - [Channels](#channels)
 - [Daphne](#daphne)
 - [Development usage](#development-usage)
@@ -23,6 +24,10 @@
 - [Bugs](#bugs)
 
 
+# Demo
+Simplest way possible to create a chat room.
+
+<img src="./docs/demo.gif" max-width="300" style="width:100%;max-width:700px"/>
 # Channels
 
 Django Channels is an extension to the Django web framework that enables handling of WebSockets, long-running tasks, and other asynchronous features. It allows Django to handle real-time applications, which require WebSocket connections or background task processing.

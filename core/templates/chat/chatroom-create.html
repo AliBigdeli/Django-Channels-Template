@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<style>
+
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .login-form {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f8f9fa;
+      }
+</style>
+{% endblock extra_css %}
+
+{% block content %}
+
+<div class="login-container">
+    <form action="{% url 'chat:create-chatroom' %}" method="post" class="login-form">
+      {% csrf_token %}
+      <h2 class="text-center mb-4">Join Chat Room</h2>
+      <div class="mb-3">
+        <label for="chatRoomName" class="form-label">Chat Room Name</label>
+        <input type="text" class="form-control" name="chat_room_name" placeholder="Enter chat room name" required>
+      </div>
+      <div class="mb-3">
+        <label for="displayName" class="form-label">Display Name</label>
+        <input type="text" class="form-control"  name="display_name" placeholder="Enter your display name" required>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Join Chat</button>
+      </div>
+    </form>
+  </div>
+
+{% endblock %}

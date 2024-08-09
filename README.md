@@ -28,6 +28,7 @@
 Simplest way possible to create a chat room.
 
 <img src="./docs/demo.gif" max-width="300" style="width:100%;max-width:700px"/>
+
 # Channels
 
 Django Channels is an extension to the Django web framework that enables handling of WebSockets, long-running tasks, and other asynchronous features. It allows Django to handle real-time applications, which require WebSocket connections or background task processing.
